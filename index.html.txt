@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                      h2 {
+                color: #696969;
+            }
+
+            .arrow {
+                border: solid #404040;
+                border-width: 0 6px 6px 0;
+                display: inline-block;
+                padding: 13px;
+                font-size: 18px;
+                font-weight: 500;
+
+            }
+            .up{
+                transform: rotate(-135deg);
+                position: absolute;
+                bottom: 440px;
+                right: 315px;
+            }
+            .left{
+                transform: rotate(135deg);
+                position: absolute;
+                bottom: 390px;
+                right: 365px;
+
+            }
+            .right{
+                transform: rotate(-45deg);
+                position: absolute;
+                bottom: 390px;
+                right: 265px;
+
+            }
+            .bck{
+                transform: rotate(45deg);
+                position: absolute;
+                bottom: 340px;
+                right: 315px;
+
+            }
+            .stop{
+                border-style: double;
+                border-width: 0px 0 0px 20px;
+                position: absolute;
+                bottom: 390px;
+                right: 295px;
+
+            }
+
+            #circle {
+                background: #efefef;
+                width: 200px;
+                height: 500px;
+                border-radius: 60px;
+                position: absolute;
+                bottom: 180px;
+                right: 234px;
+            }
+
+            #Pcircle {
+                border: solid #6f7673;
+                width: 195px;
+                height: 495px;
+                border-radius: 60px;
+                position: absolute;
+                bottom: 180px;
+                right: 234px;
+            }
+            #Brect {
+                background-color: #333333;
+                width: 170px;
+                height: 110px;
+                border-radius: 15px;
+                position: absolute;
+                bottom: 530px;
+                right: 248px;
+            }
+
+            #Srect {
+                background-color: #95a09c;
+                width: 160px;
+                height: 100px;
+                border-radius: 15px;
+                position: absolute;
+                bottom: 535px;
+                right: 253px;
+            }
+
+
+            #Ctext {
+                position: absolute;
+                bottom: 555px;
+                right: 254px;
+                color: #306d2c;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+
+        
+        
+        
+        <form  name="Add" data-name="InsertEngin" action="insertLetters.jsp" method="POST" >
+            
+            <div id="circle"></div>
+            <div id="Pcircle"></div>
+            <div id="Brect"></div>
+            <div id="Srect"></div>
+            <div id="Ctext" style="font-family:courier;" ><h1 style="font-size:20px;"><b>Control Panel</b></h1></div>
+
+            <div><button type="submit" class="arrow up" name="for" value="F" data-wait="Please wait..." ></button></div>
+            <div><button type="submit" class="arrow left" name="lef" value="L"  data-wait="Please wait..." ></button></div>
+            <div><button type="submit" class="arrow right" name="rt" value="R"  data-wait="Please wait..." ></button></div>
+            <div><button type="submit" class="arrow bck" name="bck" value="B"  data-wait="Please wait..." ></button></div>
+            <div><button type="submit" class="arrow stop" name="st" value="S"  data-wait="Please wait..." ></button></div>
+        </form>
+    </body>
+</html>
